@@ -1,37 +1,48 @@
-# 🏠 Sales Prediction Model
+# 🎓 Placement Prediction using Machine Learning
 
-## Overview
-This project focuses on building a regression-based machine learning model to predict house sales prices. It analyzes various property features like price, area, number of bedrooms, bathrooms, furnishing status, and more to estimate the value of residential properties.
+## 📌 Overview
+This project aims to predict whether a student will be placed or not based on academic and personal profile data. Using machine learning classification algorithms, the model identifies important patterns and factors influencing placement outcomes.
 
 ## 📁 Dataset
-The dataset includes the following key columns:
-- `price`: Target variable representing the house price
-- `area`: Size of the property
-- `bedrooms`, `bathrooms`, `stories`: Basic features of the house
-- `mainroad`, `guestroom`, `basement`, `hotwaterheating`, `airconditioning`: Boolean categorical variables
-- `parking`, `prefarea`, `furnishingstatus`: Additional categorical/ordinal features
+The dataset typically includes the following features:
+- `gender`
+- `ssc_percentage`, `ssc_board`
+- `hsc_percentage`, `hsc_board`, `hsc_subject`
+- `degree_percentage`, `degree_type`
+- `work_experience`
+- `employability_test_score`
+- `mba_percentage`
+- `status` (Target variable: Placed/Not Placed)
 
-## 🛠️ Tools & Libraries Used
+> 📊 Dataset may vary depending on the source (e.g., Kaggle, campus data).
+
+## 🛠️ Technologies & Tools
 - Python 3
-- Pandas
 - NumPy
-- Scikit-learn
-- Matplotlib / Seaborn (for visualization)
+- Pandas
+- Matplotlib / Seaborn (for data visualization)
+- Scikit-learn (for ML models)
 
-## 🧠 Model
-- Data preprocessing: Missing value handling, encoding categorical features
-- Feature scaling
-- Regression algorithms: Linear Regression (can be extended to others like Random Forest, Gradient Boosting)
-- Evaluation Metrics: R² Score, Mean Absolute Error (MAE), Mean Squared Error (MSE)
+## ⚙️ Workflow
+1. **Data Preprocessing**: Handling missing values, encoding categorical data, feature scaling
+2. **Exploratory Data Analysis (EDA)**: Visualizing distributions, correlation heatmaps, placement rates
+3. **Model Training**:
+   - Logistic Regression
+   - Decision Tree
+   - Random Forest
+   - K-Nearest Neighbors (KNN)
+4. **Evaluation Metrics**:
+   - Accuracy
+   - Precision, Recall, F1-score
+   - Confusion Matrix
 
-## 📊 Output
-- Trained regression model
-- Visualizations showing feature correlations and prediction results
-- Performance metrics to evaluate model accuracy
+## 📈 Output
+- Well-trained ML model with accuracy metrics
+- Insights into features most important for predicting placement
+- Graphical representations for analysis
 
 ## 🚀 How to Run
-1. Clone the repository
-2. Install required libraries using `pip install -r requirements.txt`
-3. Run the notebook or Python script:  
+1. Clone the repository  
+2. Install required libraries using:
    ```bash
-   python sales_prediction.py
+   pip install -r requirements.txt
